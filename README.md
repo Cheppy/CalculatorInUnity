@@ -1,1 +1,1 @@
-CalculatorInUnity
+CalculatorUnity
