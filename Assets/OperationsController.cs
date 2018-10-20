@@ -5,7 +5,7 @@ using UnityEngine;
 public class OperationsController : MonoBehaviour {
 
 	// Use this for initialization
-	void Summator(string number) {
+	public void Summator(string number) {
 		float.Parse(number,
       System.Globalization.CultureInfo.InvariantCulture);
 	}
