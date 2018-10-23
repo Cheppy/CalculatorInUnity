@@ -10,21 +10,16 @@ public class NumberInput : MonoBehaviour {
 
 
 	// Use this for initialization
-	void Start () {
-		
-	}
-
+	
 	public void onNumberButtonPress(int i){
 		if (i>9)
 			calcScreen.text=calcScreen.text+",";//TODO: or .
-		else
-			{
+		else{
 			int ij =Convert.ToInt32((numbers[i].name.ToString()));
-				if ((numbers[ij].name).ToString()== ij.ToString())
-			 		calcScreen.text=calcScreen.text+(numbers[ij].name).ToString();
-			//Debug.Log(i);
+			if ((numbers[ij].name).ToString()== ij.ToString())
+			 	calcScreen.text=calcScreen.text+(numbers[ij].name).ToString();
 			}
 			 //Debug.Log(3);
-							}
+	}
 		
 }
