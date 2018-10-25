@@ -30,7 +30,23 @@ public class OperationsController : MonoBehaviour {
 	
 	public void Plusle()
 	{
+		 float onScreenValue = float.Parse (calcScreen.text,
+										   System.Globalization.CultureInfo.InvariantCulture
+										   );
+		prevValue = onScreenValue;
+		if (memory == 0) 
+		{
+			memory = prevValue;
+			Debug.Log (memory);
+		} 
+		else 
+		{
+			memory = memory - prevValue;
+			Debug.Log (memory);
 
+		}
+		calcScreen.text = "";
+	}
 	}
 	
 	public void Dividor()
@@ -42,7 +58,7 @@ public class OperationsController : MonoBehaviour {
 	{ //Debug.Log(prevValue);
 		 float onScreenValue = float.Parse (calcScreen.text,
 										   System.Globalization.CultureInfo.InvariantCulture
-										  );
+										   );
 		prevValue = onScreenValue;
 		if (memory == 0) 
 		{
