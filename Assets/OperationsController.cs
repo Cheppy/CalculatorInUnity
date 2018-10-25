@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+namespace Calculator{
 public class OperationsController : MonoBehaviour {
 
 	[SerializeField] private InputField calcScreen;
-	private string operationName;
+	public static string operationName;
 	private float prevValue;
 	private float secondOp;
 	private float memory;
@@ -22,10 +23,19 @@ public class OperationsController : MonoBehaviour {
 			 switch(operation)
 			 {
 			 	case 1: Minus(); break;
-			// 	case Plusle:  Plusle(); break;
+			 	case 2:  Plusle(); break;
 			// 	case Dividor: Dividor(); break;
 			
 			}
+	}
+	
+	public void OperationsCaser(string operation)
+	{
+		 switch (operation)
+		 {
+		 	case "+": Minus();
+		// 	case "-":
+		// }
 	}
 	
 	public void Plusle()
@@ -34,45 +44,22 @@ public class OperationsController : MonoBehaviour {
 										   System.Globalization.CultureInfo.InvariantCulture
 										   );
 		prevValue = onScreenValue;
-		if (memory == 0) 
-		{
-			memory = prevValue;
-			Debug.Log (memory);
-		} 
-		else 
-		{
-			memory = memory - prevValue;
+	
+			memory = memory + onScreenValue;
 			Debug.Log (memory);
 
-		}
+		
 		calcScreen.text = "";
-	}
 	}
 	
-	public void Dividor()
-	{
-
-	}
-
 	public void Minus () 
 	{ //Debug.Log(prevValue);
-		 float onScreenValue = float.Parse (calcScreen.text,
-										   System.Globalization.CultureInfo.InvariantCulture
-										   );
-		prevValue = onScreenValue;
-		if (memory == 0) 
-		{
-			memory = prevValue;
-			Debug.Log (memory);
-		} 
-		else 
-		{
-			memory = memory - prevValue;
-			Debug.Log (memory);
+		operationName ="minus";
 
-		}
+		
 		calcScreen.text = "";
 	}
 
 
+}
 }
