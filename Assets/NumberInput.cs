@@ -22,11 +22,10 @@ namespace Calculator{
 				int ij =Convert.ToInt32((numbers[i].name.ToString()));
 				if ((numbers[ij].name).ToString() == ij.ToString())
 			 		calcScreen.text=calcScreen.text+(numbers[ij].name).ToString();
-			
 			}
-			OperationsCaser(operationchosen);
-
-			Debug.Log(Calculator.OperationsController.operationName);
+			//OperationsCaller(operationchosen);
+			Debug.Log(calcScreen.text);
+			
 		}	
 		
 	}
