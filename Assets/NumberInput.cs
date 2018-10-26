@@ -9,7 +9,7 @@ namespace Calculator{
 
 	public class NumberInput : MonoBehaviour {
 		[SerializeField] private InputField calcScreen;
-	[	SerializeField] private Button[] numbers;
+	    [SerializeField] private Button[] numbers;
 
 
 	// Use this for initialization
@@ -23,8 +23,11 @@ namespace Calculator{
 				if ((numbers[ij].name).ToString() == ij.ToString())
 			 		calcScreen.text=calcScreen.text+(numbers[ij].name).ToString();
 			}
-			//OperationsCaller(operationchosen);
-			Debug.Log(calcScreen.text);
+
+			HiddenValues.memoryValue = float.Parse (calcScreen.text,
+										   System.Globalization.CultureInfo.InvariantCulture
+										  );
+			Debug.Log(HiddenValues.memoryValue);
 			
 		}	
 		

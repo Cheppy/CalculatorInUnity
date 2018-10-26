@@ -10,7 +10,7 @@ namespace Calculator {
 
 		public void RE () {
 			calcScreen.text = "";
-			//prevValue = 0.0f;
+			HiddenValues.memoryValue = 0.0f;
 		}
 	}
 }
