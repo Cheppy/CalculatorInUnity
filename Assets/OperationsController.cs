@@ -12,7 +12,8 @@ namespace Calculator {
 			switch (operation)
 			{
 				case "+": operationsList.Addition(); break;
-				 
+			    case "-": operationsList.Sub(); break;
+
 			}
 		}
    }

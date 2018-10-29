@@ -12,6 +12,11 @@ namespace Calculator
 			result=NumberInput.memoryValue+NumberInput.firstOperand;
 			//return answer;
 		}
+		public void Sub()
+		{
+			result=NumberInput.memoryValue-NumberInput.firstOperand;
+			//return answer;
+		}
 		
 	}
 }
