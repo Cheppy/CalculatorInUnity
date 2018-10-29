@@ -7,7 +7,7 @@ using UnityEngine.UI;
 namespace Calculator{
 
 
-	public class NumberInput : MonoBehaviour {
+	public class NumberInput  {
 		[SerializeField] private InputField calcScreen;
 	    [SerializeField] private Button[] numbers;
 		public  static float memoryValue;

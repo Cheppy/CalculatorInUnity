@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 namespace Calculator {
-	public class OperationsController : MonoBehaviour {
+	public class OperationsController  {
 		OperationsList operationsList = new OperationsList();
 		public  string operationName="none";
 		public  void OperationCaller(string operation)
