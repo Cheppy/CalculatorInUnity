@@ -10,10 +10,28 @@ namespace Calculator{
 	public class NumberInput : MonoBehaviour {
 		[SerializeField] private InputField calcScreen;
 	    [SerializeField] private Button[] numbers;
+		public  static float memoryValue;
+		public static float firstOperand;
+		public string opName="nan";
+		OperationsList ol =  new OperationsList();
+		OperationsController oc = new OperationsController();
+		public void RE () 
+		
+		{
+			calcScreen.text = "";
+		}
+		
+		public void _OperationName(string name)
+		{		
+				firstOperand=memoryValue;
+				opName = name;
+		}
 
+		public void EQ(){
+			oc.OperationCaller(opName);
+			calcScreen.text=(ol.result).ToString();
+		}
 
-	// Use this for initialization
-	
 		public void onNumberButtonPress(int i){
 			if (i>9)
 				calcScreen.text=calcScreen.text+",";//TODO: or .
@@ -24,11 +42,9 @@ namespace Calculator{
 			 		calcScreen.text=calcScreen.text+(numbers[ij].name).ToString();
 			}
 
-			HiddenValues.memoryValue = float.Parse (calcScreen.text,
+			memoryValue = float.Parse (calcScreen.text,
 										   System.Globalization.CultureInfo.InvariantCulture
-										  );
-			Debug.Log(HiddenValues.memoryValue);
-			
+										  );			
 		}	
 		
 	}

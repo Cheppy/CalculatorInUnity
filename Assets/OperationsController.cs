@@ -5,12 +5,15 @@ using UnityEngine.UI;
 
 namespace Calculator {
 	public class OperationsController : MonoBehaviour {
-		[SerializeField] private InputField calcScreen;
-		public static string operationName;
-
-		public void RE () {
-			calcScreen.text = "";
-			HiddenValues.memoryValue = 0.0f;
+		OperationsList operationsList = new OperationsList();
+		public  string operationName="none";
+		public  void OperationCaller(string operation)
+		{	
+			switch (operation)
+			{
+				case "+": operationsList.Addition(); break;
+				 
+			}
 		}
-	}
+   }
 }

@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Calculator
-{
+{	
 	public class OperationsList : MonoBehaviour {
-		string OperationStored;
+		public float result;
 
-		public void OperationSignature(string operation)
+		public void Addition()
 		{
-			OperationStored=operation;
+			result=NumberInput.memoryValue+NumberInput.firstOperand;
+			//return answer;
 		}
+		
 	}
-	
 }

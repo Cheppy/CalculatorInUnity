@@ -6,9 +6,8 @@ namespace Calculator
 	public class HiddenValues
 	{
 		public static float memoryValue;
-		public static float secondOp;
-
-		public HiddenValues(float memoryValue, float secondOp)
+		public static float typedValue;
+		public HiddenValues(float memoryValue, float typedValue)
 		{
 			
 		}
