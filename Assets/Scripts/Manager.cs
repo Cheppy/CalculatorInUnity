@@ -136,7 +136,7 @@ using UnityEngine.UI;
 			}
 			else if (caption == '±')
 			{
-				currentVal = -float.Parse(digitLabel.text);
+				currentVal = -1*float.Parse(digitLabel.text);
 				updateScreen();
 			}
 			else if (caption == '%')
