@@ -392,6 +392,23 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 478982956}
   m_CullTransparentMesh: 0
+--- !u!1 &492599786 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1377975062800872, guid: 5f8af94443ff5294886b08271960df75,
+    type: 2}
+  m_PrefabInternal: {fileID: 1512059163}
+--- !u!114 &492599788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 492599786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cc4877454f9f946a35a93efcaf8241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: {fileID: 2035068891}
 --- !u!1 &503349136 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1360288689680848, guid: 5f8af94443ff5294886b08271960df75,
@@ -1299,7 +1316,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 492599788}
     - target: {fileID: 114575546204592714, guid: 5f8af94443ff5294886b08271960df75,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2251,6 +2268,11 @@ Prefab:
       propertyPath: m_Text
       value: "\xB1"
       objectReference: {fileID: 0}
+    - target: {fileID: 114886921953878810, guid: 5f8af94443ff5294886b08271960df75,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onTapped
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f8af94443ff5294886b08271960df75, type: 2}
   m_IsPrefabAsset: 0
@@ -2311,6 +2333,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   label: {fileID: 1753400573}
+--- !u!114 &2035068891 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114883130581789484, guid: 5f8af94443ff5294886b08271960df75,
+    type: 2}
+  m_PrefabInternal: {fileID: 1512059163}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &2106262553
 GameObject:
   m_ObjectHideFlags: 0
