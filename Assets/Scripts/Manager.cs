@@ -89,7 +89,7 @@ using UnityEngine.UI;
 					result = currentVal;
 					break;
 				case '+':
-					op.Sum(storedVal, currentVal);
+					result = storedVal + currentVal;	
 					break;
 				case '-':
 					op.Sub(storedVal, currentVal);
